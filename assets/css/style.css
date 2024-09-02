@@ -156,7 +156,7 @@ body {
     display: inline-flex;
 }
 
-.button1:hover a {
+.button1 a:hover {
     background-color: #fff;
     color: var(--btn-color-1);
     border: 2px solid var(--btn-color-1);
@@ -181,19 +181,30 @@ body {
 
 .box-price {
     color: var(--main-color);
-    font-weight: bold;
+    /* font-weight: bold;
     font-size: 1.5rem;
     text-align: center;
-    display: inline-block;
-    padding: 2rem;
+    display: inline-block; */
+    padding: 4rem;
     border-radius: 100%;
     background-color: #FFC800;
     position: absolute;
     right: 6rem;
+    top: 1rem;
+}
+
+.box-price-sub{
+    text-align: center;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .p-price {
     font-size: 3rem;
+    font-weight: bold;
 }
 
 /* ===================== PART 2 ===================== */
@@ -218,7 +229,7 @@ body {
     content: "";
     width: 100%;
     height: 100%;
-    background: url(img/p1.jpeg) no-repeat;
+    background: url(../img/p1.jpeg) no-repeat;
     background-size: cover;
     z-index: -1;
     position: absolute;
@@ -231,7 +242,7 @@ body {
     content: "";
     width: 100%;
     height: 100%;
-    background: url(img/p2.jpg) no-repeat center;
+    background: url(../img/p2.jpg) no-repeat center;
     background-size: cover;
     z-index: -1;
     position: absolute;
@@ -244,7 +255,7 @@ body {
     content: "";
     width: 100%;
     height: 100%;
-    background: url(img/p3.jpg) no-repeat;
+    background: url(../img/p3.jpg) no-repeat;
     background-size: cover;
     z-index: -1;
     position: absolute;
@@ -281,6 +292,7 @@ body {
     background-color: var(--main-color);
     border-radius: 30px;
     display: inline-block;
+    border: 2px solid var(--main-color);
 }
 
 .btn-p2:hover {
@@ -442,7 +454,7 @@ body {
     border: 2px solid var(--btn-color-2);
 }
 
-.part-five .button1:hover a {
+.part-five .button1 a:hover {
     color: var(--btn-color-2);
     border: 2px solid var(--btn-color-2);
     background-color: #fff;
@@ -452,7 +464,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: url(img/background23.jpg) no-repeat center;
+    background: url(../img/background23.jpg) no-repeat center;
     background-size: cover;
     padding: 1.2rem 3rem;
 }
@@ -586,7 +598,7 @@ body {
 }
 
 .background-video {
-    background: url(img/background23.jpg) no-repeat center;
+    background: url(../img/background23.jpg) no-repeat center;
     background-size: cover;
     height: 500px;
     position: relative;
