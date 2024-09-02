@@ -10,4 +10,25 @@ $(document).ready(function(){
         $(".video-ytb").hide();
         $(btn_play).show();
     });
+    $(".inner-bar").click(function(){
+        $(".menu-mobile").slideDown(500);
+        $(this).hide();
+        $(".inner-close").show();
+    });
+    $(".inner-close").click(function(){
+        $(this).hide();
+        $(".menu-mobile").slideUp(500);
+        $(".inner-bar").show();
+    });
+    $(window).resize(function(){
+        if(window.innerWidth >= 768){
+            $(".inner-close").hide();
+            $(".inner-bar").hide();
+            $(".menu-mobile").hide();
+        }else{
+            $(".inner-bar").show();
+            $(".inner-close").hide();
+            $(".menu-mobile").hide();
+        }
+    });
 });
